@@ -1,0 +1,217 @@
+<!doctype html>
+	<html>
+	<head>
+		<title>Register Form</title>
+		<script type="text/javascript" src="script/reg.js"></script>
+		<style type="text/css">
+			body{
+				padding: 0;
+				margin: 0;
+				background: url(Registered.jpg)no-repeat;
+				background-size: cover;
+			}
+			
+			form{
+				font-family: "Roboto",sans-serif;
+				position: absolute;top: -135px;right: 5%;width: 100%;
+				
+				background: #FFFFF;
+				opacity: 90%;
+				max-width: 450px;
+				height: 610px;
+				margin: 200px auto; 100px;
+				padding: 5px 20px 15px 20px;
+				text-align: right;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.2),0 5px 5px 0 rgba(0, 0, 0, 0.24);
+				border-radius: 10px;
+				background-color: #383838;
+
+
+			}
+			form input{
+				outline: 0;
+				border-radius: 10px;
+				background: #F2F2F2;
+				width: 100%;
+				height: 15px;
+				border: 0;
+				margin : 4px;
+				padding: 20px;
+				box-sizing: border-box;
+				font-size: 14px;
+			}
+			button{
+				background-color: #C2CD2D;
+				border: none;
+				border-radius: 10px;
+				color: black;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 16px;
+			}
+			.name{
+				text-align: right;
+			}
+			a{
+				margin-right: 5px;
+
+			}
+			select{
+				width: 100%;
+				height: 40px;
+				border-radius: 10px;
+				background: #F2F2F2;
+			}
+			.submit{
+				background-color: #C2CD2D;
+				border: none;
+				border-radius: 10px;
+				color: black;
+				padding: 10px 20px;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				text-decoration: none;
+				font-size: 16px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<header style="text-align:left; margin-left :25px;"><h1>Jawaharlal Nehru National College of Engineering<h1>
+			
+		</header>
+		<form style="text-align: center; color:white; font-size: 20px;">
+			<table>
+				<tr>
+					<td class="name">
+			<label><b>User Name :</b></label>
+		</td>
+		<td>
+			<input id="username" type="text" name="Username" placeholder="Enter Username" onclick="validate()">
+		</td>
+	</tr>
+<tr>
+	<td class="name">
+			<label><b>Full Name :</b></label>
+		</td>
+		<td>
+			<input id="name" type="text" name="Full Name" placeholder="Enter Full Name" onclick="validate()">
+		</td>
+	</tr>
+	<tr>
+		<td class="name">
+			<label><b>Branch :</b></label>
+		</td>
+		<td>
+			<select id="branch" name="Branch" onclick="validate()">
+				<option>Select branch</option><br>
+				<option>EEE</option><br>
+				<option>CSE</option><br>
+				<option>ISE</option><br>
+				<option>ME</option><br>
+				<option>CE</option><br>
+				<option>TCE</option><br>
+			</select><br>
+		</td>
+	</tr>
+	<tr>
+		<td class="name">
+			<label><b>Admission No :</b></label>
+		</td>
+		<td>
+			<input id="addNo" type="text" name="Admission No" placeholder="Enter Ad.No">
+		</td>
+	</tr>
+	<tr>
+		<td class="name">
+			<label><b>USN :</b></label>
+		</td>
+		<td>
+			<input id="usn" type="text" name="USN" placeholder="Enter USN" >
+		</td>
+	</tr>
+<tr>
+	<td class="name">
+			<label><b>Email :</b></label>
+		</td>
+		<td>
+			<input id="email" type="email" name="Email" placeholder="Enter mail Id">
+		</td>
+	</tr>
+	<tr>
+		<td class="name">
+
+			<label><b>DOB :</b></label>
+		</td>
+		<td>
+			<input id="dob" type="date" name="DOB">
+		</td>
+	</tr>
+	<tr>
+		<td class="name">
+			<label><b>Contact :</b></label>
+		</td>
+		<td>
+			<input id="conNo" type="tel" name="Contact" placeholder="Enter Contact no">
+		</td>
+	</tr>
+	<tr>
+		<td class="name">
+
+			<label><b>Gender :</b></label>
+		</td>
+		<td>
+			<input type="radio" name="Gender" value="Male" id="male">
+			<label for="male" >Male</label>
+		</td>
+		<td>
+			<input type="radio" name="Gender" value="Female" id="female">
+			<label for="female" >Female</label>
+		</td>
+	</tr>
+	<tr>
+		<td class="name">
+			<label><b>Password :</b></label>
+		</td>
+		<td>
+			<input id="password" type="password" name="Password" placeholder="Enter Password">
+		</td>
+	</tr>
+	<tr>
+		<td class="name">
+			<label><b>Confirm Password :</b></label>
+		</td>
+		<td>
+			<input id="confpass" type="password" name="Confirm Password" placeholder="Enter Confirm password">
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td >
+			
+		</td>
+		<td>
+			<input type="button" value="Submit" id="login" class="submit" onclick="validate()">
+			<button type="reset" value="Clear">Clear</button>
+		</td>
+	</tr>
+	<tr>
+			<td>
+				
+			</td>
+			<td>
+				<h5 id="print"></h5>
+			</td>
+		</tr>
+
+			</table>
+		</form>
+		
+		<footer style="position: fixed;text-align: center; bottom: 2px; font-size: 24px;width: 100%; color: white;">
+			CopyRight.All right reserved 2021
+			
+		</footer>
+	</body>
+	</html>

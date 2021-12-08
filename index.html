@@ -1,0 +1,167 @@
+<!doctype html>
+	<html>
+	<head>
+		<title>Login Page</title>
+		<script type="text/javascript" src="script/script.js"></script>
+		
+	</head>
+		
+	<body>
+		<header style="text-align:center;"><h1>JAMS</h1>
+			<h4><a style="position: fixed;text-align: right; top: 2px; font-size: 24px;color: black; right: 8px;"href="registerform.html" :target="_blank">Register</a></h4>
+		</header>
+		<style type="text/css">
+			body{
+				padding: 0;
+				margin: 0;
+				background: url(Jawaharlal-Nehru-National-College.jpg)no-repeat;
+				background-size: cover;
+			}
+			form{
+				font-family: "Roboto",sans-serif;
+				position: absolute;top: 13%;right: 10%;width: 40%;
+				
+				background: #FFFFF;
+				opacity: 90%;
+				max-width: 300px;
+				margin: 200px auto; 100px;
+				padding: 10px 45px 30px 45px;
+				text-align: center;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.2),0 5px 5px 0 rgba(0, 0, 0, 0.24);
+				border-radius: 10px;
+				background-color: #383838;
+
+
+			}
+			form p{
+				font-size: 15px;
+				padding: 1px;
+				text-align: center;
+			}
+			form input{
+				outline: 0;
+				border-radius: 10px;
+				background: #F2F2F2;
+				width: 100%;
+				border: 0;
+				margin: 0 0 0px;
+				padding: 20px;
+				box-sizing: border-box;
+				font-size: 14px;
+			}
+			button{
+				background-color: #C2CD2D;
+				border: none;
+				border-radius: 10px;
+				color: black;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 16px;
+			}
+
+
+			
+			.sign{
+				color: white;
+			}
+			td{
+				color: white;
+			}
+
+			.forgot a{
+				color: white;
+			}
+
+			.forget a:link{
+				text-decoration: none;
+			}
+
+			.reset button{
+				position: fixed;
+				top: 506px;
+				left: 1128px;
+				width: 100px;
+				height: 50px;
+				text-align: center;
+				padding: 5px;
+			}
+
+			#login{
+				background-color: #C2CD2D;
+				border: none;
+				border-radius: 10px;
+				color: black;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 16px;
+				width: 100px;
+			}
+
+
+			
+		</style>
+		
+		<form background:rgba(0,0,0,0.5);>
+			<h2 class="sign" align="left">Student Sign In</h2>
+		<table align="center"height="15%">
+			<tr>
+				<tr>
+					<tr>
+				<td>
+					<b>UserName:</b>
+				</td>
+				<td>
+					<input type="text" id="email" name="username"placeholder="Enter your username">
+				</td>
+			</tr>
+		</tr>
+		</tr>
+			<tr>
+				<tr>
+					<tr>
+				<td>
+					<b>Password:</b>
+				</td>
+				<td>
+					<input id="password" type="password" name="password"placeholder="Enter your password">
+				</td>
+			</tr>
+		</tr>
+		</tr>
+		
+			<tr align="right">
+				<td colspan="6">
+					<input type="button" value="Login" id="login" onclick="validate()"> 
+				</td>
+	
+				<td class="reset">
+					<button type="reset" value="Reset">Reset</button> 
+				</td>
+	</tr>
+	<tr>
+			<td>
+				
+			</td>
+			<td>
+				<h4 id="print"></h4>
+			</td>
+		</tr>
+			
+			<tr align="center">
+				<td colspan="6">
+					<p class="forgot"><a href="https :"target="_blank"><b>Forgot Your Password?</b></a></p>
+				</td>
+				
+			</tr>
+			
+		</table>
+	</form>
+	<footer style="position: fixed;text-align: center; bottom: 2px; font-size: 24px;color: white;
+	width: 100%;">
+			CopyRight.All right reserved 2021
+			
+		</footer>
+	</body>
+	</html>
